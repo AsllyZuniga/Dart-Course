@@ -1,7 +1,8 @@
 import 'dart:io';
+
 void main() {
   for (int i = 0; i < 10; i++) {
-    print(i);  // Ejemplo: imprimir los números del 0 al 9
+    print(i); // Ejemplo: imprimir los números del 0 al 9
   }
 
   /*
@@ -9,11 +10,9 @@ void main() {
   (ese dato debe ser capturado por el usuario)
   */
   stdout.writeln('¿Cuál es la base de la tabla?');
-  int base = int.parse( stdin.readLineSync() );
+  int base = int.parse(stdin.readLineSync() ?? '0');
 
-  for (var i = 1; i <= 10; i++) {
+  for (int i = 1; i <= 10; i++) {
     stdout.writeln('2 * $i = ${i * base}');
-
-    
   }
 }
