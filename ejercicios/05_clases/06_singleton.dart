@@ -7,4 +7,9 @@ void main(List<String> args) {
 
    final spotifyService2 = new MiServicio();
   spotifyService.url = 'https//api.spotify.com';
+
+  print(spotifyService == spotifyService2); //Falso
+
+  print(spotifyService.url);
+  print(spotifyService2.url);
 }
